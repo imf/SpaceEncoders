@@ -17,6 +17,11 @@
 		9D0E9E2224A4FBFF001CFE15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E2024A4FBFF001CFE15 /* LaunchScreen.storyboard */; };
 		9D0E9E2D24A4FC00001CFE15 /* SpaceEncodersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E2C24A4FC00001CFE15 /* SpaceEncodersTests.swift */; };
 		9D0E9E3824A4FC00001CFE15 /* SpaceEncodersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E3724A4FC00001CFE15 /* SpaceEncodersUITests.swift */; };
+		9D0E9E4624A4FC21001CFE15 /* BundleDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4524A4FC21001CFE15 /* BundleDecoder.swift */; };
+		9D0E9E4824A4FE7E001CFE15 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4724A4FE7E001CFE15 /* Wave.swift */; };
+		9D0E9E4A24A4FEB5001CFE15 /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4924A4FEB5001CFE15 /* EnemyType.swift */; };
+		9D0E9E4C24A5003F001CFE15 /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4B24A5003F001CFE15 /* enemy-types.json */; };
+		9D0E9E4E24A50069001CFE15 /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4D24A50069001CFE15 /* waves.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		9D0E9E3324A4FC00001CFE15 /* SpaceEncodersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceEncodersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0E9E3724A4FC00001CFE15 /* SpaceEncodersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceEncodersUITests.swift; sourceTree = "<group>"; };
 		9D0E9E3924A4FC00001CFE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0E9E4524A4FC21001CFE15 /* BundleDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecoder.swift; sourceTree = "<group>"; };
+		9D0E9E4724A4FE7E001CFE15 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		9D0E9E4924A4FEB5001CFE15 /* EnemyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		9D0E9E4B24A5003F001CFE15 /* enemy-types.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
+		9D0E9E4D24A50069001CFE15 /* waves.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				9D0E9E1124A4FBFC001CFE15 /* AppDelegate.swift */,
+				9D0E9E4524A4FC21001CFE15 /* BundleDecoder.swift */,
 				9D0E9E1324A4FBFC001CFE15 /* GameScene.sks */,
 				9D0E9E1524A4FBFC001CFE15 /* Actions.sks */,
+				9D0E9E4924A4FEB5001CFE15 /* EnemyType.swift */,
+				9D0E9E4724A4FE7E001CFE15 /* Wave.swift */,
+				9D0E9E4B24A5003F001CFE15 /* enemy-types.json */,
+				9D0E9E4D24A50069001CFE15 /* waves.json */,
 				9D0E9E1724A4FBFC001CFE15 /* GameScene.swift */,
 				9D0E9E1924A4FBFC001CFE15 /* GameViewController.swift */,
 				9D0E9E1B24A4FBFC001CFE15 /* Main.storyboard */,
@@ -240,7 +255,9 @@
 			files = (
 				9D0E9E1D24A4FBFC001CFE15 /* Main.storyboard in Resources */,
 				9D0E9E1424A4FBFC001CFE15 /* GameScene.sks in Resources */,
+				9D0E9E4C24A5003F001CFE15 /* enemy-types.json in Resources */,
 				9D0E9E1F24A4FBFF001CFE15 /* Assets.xcassets in Resources */,
+				9D0E9E4E24A50069001CFE15 /* waves.json in Resources */,
 				9D0E9E2224A4FBFF001CFE15 /* LaunchScreen.storyboard in Resources */,
 				9D0E9E1624A4FBFC001CFE15 /* Actions.sks in Resources */,
 			);
@@ -268,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0E9E1824A4FBFC001CFE15 /* GameScene.swift in Sources */,
+				9D0E9E4824A4FE7E001CFE15 /* Wave.swift in Sources */,
+				9D0E9E4A24A4FEB5001CFE15 /* EnemyType.swift in Sources */,
 				9D0E9E1A24A4FBFC001CFE15 /* GameViewController.swift in Sources */,
+				9D0E9E4624A4FC21001CFE15 /* BundleDecoder.swift in Sources */,
 				9D0E9E1224A4FBFC001CFE15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

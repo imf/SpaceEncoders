@@ -11,6 +11,10 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+//    let user = Bundle.main.decode(User.self, from: "user")
+    let waves = Bundle.main.decode([Wave].self, from: "waves")
+    let wnwmyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types")
+
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
