@@ -8,6 +8,10 @@
 
 import SpriteKit
 
+
+class Ship: SKSpriteNode {
+}
+
 class GameScene: SKScene {
     
 //    let user = Bundle.main.decode(User.self, from: "user")
@@ -20,7 +24,17 @@ class GameScene: SKScene {
             particles.zPosition = -1
             particles.advanceSimulationTime(60)
             addChild(particles)
+            
+            let ship = MakeShip(type: "ship1")
+            ship.position = CGPoint(x: 0, y: 0 - frame.height / 2.6)
+            ship.zPosition = 1
+            addChild(ship)
         }
     }
+    
+    func MakeShip(type: String) -> Ship {
+        return Ship(imageNamed: type)
+    }
+
     
 }
