@@ -11,7 +11,7 @@ import SpriteKit
 struct Wave: Codable {
     struct WaveEnemy: Codable {
         let position: Int
-        let xOffset: CGFloat
+        let offset: CGFloat
         let moveStyle: String
     }
     

@@ -23,6 +23,9 @@
 		9D0E9E4C24A5003F001CFE15 /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4B24A5003F001CFE15 /* enemy-types.json */; };
 		9D0E9E4E24A50069001CFE15 /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4D24A50069001CFE15 /* waves.json */; };
 		9D0E9E5024A52A46001CFE15 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E4F24A52A46001CFE15 /* Starfield.sks */; };
+		9D0E9E5224A54C83001CFE15 /* ships.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5124A54C83001CFE15 /* ships.json */; };
+		9D0E9E5424A54D34001CFE15 /* ShipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5324A54D34001CFE15 /* ShipInfo.swift */; };
+		9D0E9E5624A54F31001CFE15 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5524A54F31001CFE15 /* EnemyNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		9D0E9E4B24A5003F001CFE15 /* enemy-types.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
 		9D0E9E4D24A50069001CFE15 /* waves.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
 		9D0E9E4F24A52A46001CFE15 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		9D0E9E5124A54C83001CFE15 /* ships.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ships.json; sourceTree = "<group>"; };
+		9D0E9E5324A54D34001CFE15 /* ShipInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipInfo.swift; sourceTree = "<group>"; };
+		9D0E9E5524A54F31001CFE15 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +127,12 @@
 				9D0E9E4F24A52A46001CFE15 /* Starfield.sks */,
 				9D0E9E1524A4FBFC001CFE15 /* Actions.sks */,
 				9D0E9E4924A4FEB5001CFE15 /* EnemyType.swift */,
+				9D0E9E5524A54F31001CFE15 /* EnemyNode.swift */,
 				9D0E9E4724A4FE7E001CFE15 /* Wave.swift */,
+				9D0E9E5324A54D34001CFE15 /* ShipInfo.swift */,
 				9D0E9E4B24A5003F001CFE15 /* enemy-types.json */,
 				9D0E9E4D24A50069001CFE15 /* waves.json */,
+				9D0E9E5124A54C83001CFE15 /* ships.json */,
 				9D0E9E1924A4FBFC001CFE15 /* GameViewController.swift */,
 				9D0E9E1B24A4FBFC001CFE15 /* Main.storyboard */,
 				9D0E9E1E24A4FBFF001CFE15 /* Assets.xcassets */,
@@ -260,6 +269,7 @@
 				9D0E9E1424A4FBFC001CFE15 /* GameScene.sks in Resources */,
 				9D0E9E5024A52A46001CFE15 /* Starfield.sks in Resources */,
 				9D0E9E4C24A5003F001CFE15 /* enemy-types.json in Resources */,
+				9D0E9E5224A54C83001CFE15 /* ships.json in Resources */,
 				9D0E9E1F24A4FBFF001CFE15 /* Assets.xcassets in Resources */,
 				9D0E9E4E24A50069001CFE15 /* waves.json in Resources */,
 				9D0E9E2224A4FBFF001CFE15 /* LaunchScreen.storyboard in Resources */,
@@ -293,6 +303,8 @@
 				9D0E9E4A24A4FEB5001CFE15 /* EnemyType.swift in Sources */,
 				9D0E9E1A24A4FBFC001CFE15 /* GameViewController.swift in Sources */,
 				9D0E9E4624A4FC21001CFE15 /* BundleDecoder.swift in Sources */,
+				9D0E9E5424A54D34001CFE15 /* ShipInfo.swift in Sources */,
+				9D0E9E5624A54F31001CFE15 /* EnemyNode.swift in Sources */,
 				9D0E9E1224A4FBFC001CFE15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

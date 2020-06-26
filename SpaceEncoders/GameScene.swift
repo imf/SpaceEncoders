@@ -12,11 +12,19 @@ import SpriteKit
 class Ship: SKSpriteNode {
 }
 
+enum CollisionType: UInt32 {
+    case player = 1
+    case shot = 2
+    case enemy = 4
+    case enemyShot = 8
+}
+
 class GameScene: SKScene {
     
 //    let user = Bundle.main.decode(User.self, from: "user")
+//    let shipInfo = Bundle.main.decode([ShipInfo].self, from: "ships")
     let waves = Bundle.main.decode([Wave].self, from: "waves")
-    let wnwmyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types")
+    let enemyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types")
 
     override func didMove(to view: SKView) {
         if let particles = SKEmitterNode(fileNamed: "Starfield") {
@@ -26,7 +34,7 @@ class GameScene: SKScene {
             addChild(particles)
             
             let ship = MakeShip(type: "ship1")
-            ship.position = CGPoint(x: 0, y: 0 - frame.height / 2.6)
+            ship.position = CGPoint(x: 0, y: frame.minY + 100)
             ship.zPosition = 1
             addChild(ship)
         }

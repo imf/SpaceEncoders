@@ -1,0 +1,26 @@
+[
+    {
+        "type": "ship1"
+        "name": "Star Cruiser"
+    },
+    {
+        "type": "ship2"
+        "name": "Star Cruiser"
+    },
+    {
+        "type": "ship3"
+        "name": "Star Cruiser"
+    },
+    {
+        "type": "ship4"
+        "name": "Star Cruiser"
+    },
+    {
+        "type": "ship5"
+        "name": "Star Cruiser"
+    },
+    {
+        "type": "ship6"
+        "name": "Star Cruiser"
+    }
+]

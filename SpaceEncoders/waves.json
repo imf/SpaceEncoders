@@ -4,17 +4,17 @@
         "enemies": [
             {
                 "position": 0,
-                "xOffset": 2,
+                "offset": 2,
                 "moveStyle": "straight"
             },
             {
                 "position": 4,
-                "xOffset": 0,
+                "offset": 0,
                 "moveStyle": "straight"
             },
             {
                 "position": 8,
-                "xOffset": 2,
+                "offset": 2,
                 "moveStyle": "straight"
             }
         ]
@@ -24,32 +24,32 @@
         "enemies": [
             {
                 "position": 2,
-                "xOffset": 0,
+                "offset": 0,
                 "moveStyle": "wiggly"
             },
             {
                 "position": 1,
-                "xOffset": 2,
+                "offset": 2,
                 "moveStyle": "wiggly"
             },
             {
                 "position": 0,
-                "xOffset": 4,
+                "offset": 4,
                 "moveStyle": "wiggly"
             },
             {
                 "position": 6,
-                "xOffset": 1,
+                "offset": 1,
                 "moveStyle": "wiggly"
             },
             {
                 "position": 7,
-                "xOffset": 3,
+                "offset": 3,
                 "moveStyle": "wiggly"
             },
             {
                 "position": 5,
-                "xOffset": 8,
+                "offset": 8,
                 "moveStyle": "wiggly"
             }
         ]
@@ -59,62 +59,62 @@
         "enemies": [
             {
                 "position": 4,
-                "xOffset": 0,
+                "offset": 0,
                 "moveStyle": "straight"
             },
             {
                 "position": 3,
-                "xOffset": 1,
+                "offset": 1,
                 "moveStyle": "straight"
             },
             {
                 "position": 2,
-                "xOffset": 2,
+                "offset": 2,
                 "moveStyle": "straight"
             },
             {
                 "position": 1,
-                "xOffset": 3,
+                "offset": 3,
                 "moveStyle": "straight"
             },
             {
                 "position": 6,
-                "xOffset": 2,
+                "offset": 2,
                 "moveStyle": "straight"
             },
             {
                 "position": 7,
-                "xOffset": 3,
+                "offset": 3,
                 "moveStyle": "straight"
             },
             {
                 "position": 2,
-                "xOffset": 8,
+                "offset": 8,
                 "moveStyle": "straight"
             },
             {
                 "position": 1,
-                "xOffset": 8,
+                "offset": 8,
                 "moveStyle": "straight"
             },
             {
                 "position": 0,
-                "xOffset": 8,
+                "offset": 8,
                 "moveStyle": "straight"
             },
             {
                 "position": 6,
-                "xOffset": 9,
+                "offset": 9,
                 "moveStyle": "straight"
             },
             {
                 "position": 7,
-                "xOffset": 9,
+                "offset": 9,
                 "moveStyle": "straight"
             },
             {
                 "position": 8,
-                "xOffset": 9,
+                "offset": 9,
                 "moveStyle": "straight"
             }
         ]
