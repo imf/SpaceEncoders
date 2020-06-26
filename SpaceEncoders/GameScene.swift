@@ -33,6 +33,7 @@ class GameScene: SKScene {
     let positions = Array(stride(from: -320, through: 320, by: 80))
     
     override func didMove(to view: SKView) {
+        physicsWorld.gravity = .zero
         if let particles = SKEmitterNode(fileNamed: "Starfield") {
             particles.position = CGPoint(x: 0, y: frame.height)
             particles.zPosition = -1
@@ -44,6 +45,28 @@ class GameScene: SKScene {
             ship.zPosition = 1
             addChild(ship)
         }
+    }
+
+    override func update(_ currentTime: TimeInterval) {
+        pruneOffscreenEntities()
+        
+        if activeEnemies() == 0 {
+            createWave()
+        }
+    }
+    
+    func pruneOffscreenEntities() {
+        for child in children {
+            if child.frame.maxY < 0 {
+                if !frame.intersects(child.frame) {
+                    child.removeFromParent()
+                }
+            }
+        }
+    }
+    
+    func activeEnemies() -> Int {
+        return (children.compactMap { $0 as? EnemyNode }).count
     }
     
     func makeShip(type: String) -> Ship {
