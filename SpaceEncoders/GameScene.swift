@@ -70,7 +70,16 @@ class GameScene: SKScene {
     }
     
     func makeShip(type: String) -> Ship {
-        return Ship(imageNamed: type)
+        let ship = Ship(imageNamed: type)
+        
+        ship.physicsBody = SKPhysicsBody(texture: ship.texture!, size: ship.texture!.size())
+        physicsBody?.categoryBitMask = CollisionType.player.rawValue
+        physicsBody?.collisionBitMask = CollisionType.player.rawValue | CollisionType.enemyShot.rawValue
+        physicsBody?.contactTestBitMask = CollisionType.player.rawValue | CollisionType.enemyShot.rawValue
+
+        ship.physicsBody?.isDynamic = false
+
+        return ship
     }
 
     func createWave() {
