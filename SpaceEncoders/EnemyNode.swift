@@ -21,10 +21,10 @@ class EnemyNode: SKSpriteNode {
 
         position = CGPoint(x: startPosition.x, y: startPosition.y - offset)
 
-        physicsBody = SKPhysicsBody(texture: texture, size: texture.size())
-        physicsBody?.categoryBitMask = CollisionType.enemy.rawValue
-        physicsBody?.collisionBitMask = CollisionType.enemy.rawValue | CollisionType.shot.rawValue
-        physicsBody?.contactTestBitMask = CollisionType.enemy.rawValue | CollisionType.shot.rawValue
+        getPhysical(categoryBitMask: CollisionType.enemy.rawValue,
+                    collisionBitMask: CollisionType.enemy.rawValue | CollisionType.shot.rawValue,
+                    contactTestBitMask: CollisionType.enemy.rawValue | CollisionType.shot.rawValue
+        )
         name = "enemy"
         
         configureMovement(moveType: moveType)
@@ -33,6 +33,11 @@ class EnemyNode: SKSpriteNode {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("No bueno.")
+    }
+    
+    func fire() {
+        lastFireTime = Date().timeIntervalSinceReferenceDate
+        print("Enemy.fire() called at \(lastFireTime)")
     }
     
     func configureMovement(moveType: String) {

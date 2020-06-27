@@ -50,9 +50,11 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         pruneOffscreenEntities()
         
-        if activeEnemies() == 0 {
+        let activeEnemies = checkActiveEnemies()
+        if activeEnemies.count == 0 {
             createWave()
         }
+        fireWeapons(enemies: activeEnemies, currentTime: currentTime)
     }
     
     func pruneOffscreenEntities() {
@@ -65,8 +67,21 @@ class GameScene: SKScene {
         }
     }
     
-    func activeEnemies() -> Int {
-        return (children.compactMap { $0 as? EnemyNode }).count
+    func checkActiveEnemies() -> [EnemyNode] {
+        return (children.compactMap { $0 as? EnemyNode })
+    }
+    
+    func fireWeapons(enemies: [EnemyNode], currentTime: TimeInterval) {
+        for enemy in enemies {
+            guard frame.intersects(enemy.frame) else { continue }
+            if enemy.lastFireTime + 1 < currentTime {
+                enemy.lastFireTime = currentTime
+                if Int.random(in: 0...6) == 0 {
+                    enemy.fire()
+                }
+                
+            }
+        }
     }
     
     func makeShip(type: String) -> Ship {

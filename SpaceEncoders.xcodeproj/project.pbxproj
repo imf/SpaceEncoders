@@ -26,6 +26,9 @@
 		9D0E9E5224A54C83001CFE15 /* ships.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5124A54C83001CFE15 /* ships.json */; };
 		9D0E9E5424A54D34001CFE15 /* ShipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5324A54D34001CFE15 /* ShipInfo.swift */; };
 		9D0E9E5624A54F31001CFE15 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5524A54F31001CFE15 /* EnemyNode.swift */; };
+		9D0E9E5824A6C5D5001CFE15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5724A6C5D5001CFE15 /* Extensions.swift */; };
+		9D0E9E5924A6C5D5001CFE15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5724A6C5D5001CFE15 /* Extensions.swift */; };
+		9D0E9E5A24A6C5D5001CFE15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9E5724A6C5D5001CFE15 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 		9D0E9E5124A54C83001CFE15 /* ships.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ships.json; sourceTree = "<group>"; };
 		9D0E9E5324A54D34001CFE15 /* ShipInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipInfo.swift; sourceTree = "<group>"; };
 		9D0E9E5524A54F31001CFE15 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		9D0E9E5724A6C5D5001CFE15 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 				9D0E9E2024A4FBFF001CFE15 /* LaunchScreen.storyboard */,
 				9D0E9E1324A4FBFC001CFE15 /* GameScene.sks */,
 				9D0E9E2324A4FBFF001CFE15 /* Info.plist */,
+				9D0E9E5724A6C5D5001CFE15 /* Extensions.swift */,
 			);
 			path = SpaceEncoders;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0E9E1824A4FBFC001CFE15 /* GameScene.swift in Sources */,
+				9D0E9E5824A6C5D5001CFE15 /* Extensions.swift in Sources */,
 				9D0E9E4824A4FE7E001CFE15 /* Wave.swift in Sources */,
 				9D0E9E4A24A4FEB5001CFE15 /* EnemyType.swift in Sources */,
 				9D0E9E1A24A4FBFC001CFE15 /* GameViewController.swift in Sources */,
@@ -314,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0E9E2D24A4FC00001CFE15 /* SpaceEncodersTests.swift in Sources */,
+				9D0E9E5924A6C5D5001CFE15 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0E9E3824A4FC00001CFE15 /* SpaceEncodersUITests.swift in Sources */,
+				9D0E9E5A24A6C5D5001CFE15 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
