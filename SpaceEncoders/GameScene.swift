@@ -86,6 +86,10 @@ class GameScene: SKScene {
     
     func makeShip(type: String) -> Ship {
         let ship = Ship(imageNamed: type)
+//        ship.getPhysical(categoryBitMask: CollisionType.player.rawValue,
+//                         collisionBitMask: CollisionType.player.rawValue | CollisionType.enemyShot.rawValue,
+//                         contactTestBitMask: CollisionType.player.rawValue | CollisionType.enemyShot.rawValue
+//        )
         
         ship.physicsBody = SKPhysicsBody(texture: ship.texture!, size: ship.texture!.size())
         physicsBody?.categoryBitMask = CollisionType.player.rawValue
